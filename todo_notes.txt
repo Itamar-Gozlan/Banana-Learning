@@ -1,0 +1,5 @@
+- try to run based on the CIFAR CNN - currently in itamar_main.py not working
+- re-size images before loading (with minimum loss of data)
+- clear background from image or blur if possible
+- make a module out of utils function and use import instead re-write the code
+- understand ImageDataGenerator
