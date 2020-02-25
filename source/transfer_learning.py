@@ -15,8 +15,11 @@ import sys
 
 """" --- globals --- """
 
-num_epochs = 400
+num_epochs = 1
 save_folder_path = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models"
+path_train = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/train'
+path_test = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/test'
+path_validation = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/validation'
 
 """" --- common utils for all networks --- """
 
@@ -43,14 +46,14 @@ def get_data_gen(preprocess_input, use_augmentation):
 def gen_iterators(shape: tuple, preprocess_input, use_augmentation):
     data_gen = get_data_gen(preprocess_input, use_augmentation)
 
-    train_it = data_gen.flow_from_directory('D:/Users Data/ItamarGIP/Desktop/Itamar/data/sorted/train',
+    train_it = data_gen.flow_from_directory(path_train,
                                             target_size=shape,
                                             color_mode='rgb',
                                             batch_size=32,
                                             class_mode='categorical',
                                             shuffle=True)
 
-    test_it = data_gen.flow_from_directory('D:/Users Data/ItamarGIP/Desktop/Itamar/data/sorted/test',
+    test_it = data_gen.flow_from_directory(path_test,
                                            target_size=shape,
                                            color_mode='rgb',
                                            batch_size=32,
@@ -74,7 +77,7 @@ def save__model(model, model_name):
 
 def evaluate_model(model, preprocess_input):
     data_gen = ImageDataGenerator(preprocessing_function=preprocess_input)
-    validation_gt = data_gen.flow_from_directory('D:/Users Data/ItamarGIP/Desktop/Itamar/data/sorted/validation',
+    validation_gt = data_gen.flow_from_directory(path_validation,
                                                  target_size=(336, 252),
                                                  color_mode='rgb',
                                                  batch_size=32,
@@ -129,11 +132,11 @@ Residual Network (e.g. ResNet50).
 
 
 def execute_all_models(use_augmentation=False):
-    train_size = count_files_in_path('D:/Users Data/ItamarGIP/Desktop/Itamar/data/sorted/train')
-    test_size = count_files_in_path('D:/Users Data/ItamarGIP/Desktop/Itamar/data/sorted/test')
+    train_size = count_files_in_path(path_train)
+    test_size = count_files_in_path(path_test)
 
     # Mobilenet
-    print("============== Mobilenet ==============")
+    print("============== Mobilenet_"+str(use_augmentation)+" ==============")
     train_gt, test_gt = gen_iterators((336, 252), mobilenet_preprocess_input, use_augmentation)
     mobilenet_model = MobileNet(weights='imagenet',
                                 include_top=False,
@@ -141,7 +144,7 @@ def execute_all_models(use_augmentation=False):
 
     model = transfer_learning(train_size, test_size, train_gt, test_gt, mobilenet_model)  # build model
     evaluate_model(model, mobilenet_preprocess_input)
-    save__model(model, "MobileNet")
+    save__model(model, "Mobilenet_"+str(use_augmentation))
     #
     # # VGG
     # print("============== VGG ==============")
@@ -155,7 +158,7 @@ def execute_all_models(use_augmentation=False):
     # save__model(model, "VGG16")
 
     # GoogLeNet (e.g. InceptionV3).
-    print("============== GoogLeNet ==============")
+    print("============== GoogLeNet"+str(use_augmentation)+" ==============")
 
     train_gt, test_gt = gen_iterators((336, 252), gn_preprocess_input, use_augmentation)
     googlenet_model = InceptionV3(weights='imagenet',
@@ -164,7 +167,7 @@ def execute_all_models(use_augmentation=False):
 
     model = transfer_learning(train_size, test_size, train_gt, test_gt, googlenet_model)  # build model
     evaluate_model(model, gn_preprocess_input)
-    save__model(model, "GoogleNet")
+    save__model(model, "GoogleNet"+str(use_augmentation))
 
     # # ResNet50 (e.g. InceptionV3).
     # print("============== ResNet50 ==============")
@@ -179,6 +182,12 @@ def execute_all_models(use_augmentation=False):
 
 
 # sys.stdout = open('logs/transfer_learning.log', "w")
-# execute_all_models(True)
+
+print("=============== Transfer Leraning - No Augmentation ==============")
+execute_all_models(False)
+
+
+print("=============== Transfer Leraning - No Augmentation ==============")
+execute_all_models(True)
 
 

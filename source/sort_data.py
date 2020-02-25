@@ -35,29 +35,30 @@ def sort_for_category(dst, src, category):
         id = filename.split("_")[6]
         if is_validate_id(id):
             curr_dst = dst+"/validation/"+category+"/"+filename
-            # print(curr_dst)
-            # print(src+"/"+filename)
+            print(curr_dst)
+            print(src+"/"+filename)
             # copyfile(src+"/"+filename, curr_dst)
         else:
             print(filename)
-            arr += filename # TODO - fix wrong addition to array
+            arr.append(filename)
 
     print(arr)
     random.shuffle(arr)
     print(("===================\n\n\n\==============="))
     print(arr)
-    # count = 0
-    # for filename in arr:
-    #     if count < len(arr)*0.8:
-    #         curr_dst = dst + "/train/" + category + "/" + filename
-    #         print(curr_dst)
-    #         print(src + "/" + filename)
-    #         # copyfile(src + "/" + filename, curr_dst)
-    #     else:
-    #         curr_dst = dst + "/test/" + category + "/" + filename
-    #         print(curr_dst)
-    #         print(src + "/" + filename)
-    #         # copyfile(src + "/" + filename, curr_dst)
+    count = 0
+    for filename in arr:
+        if count < len(arr)*0.8:
+            curr_dst = dst + "/train/" + category + "/" + filename
+            print(curr_dst)
+            print(src + "/" + filename + " => "+curr_dst)
+            copyfile(src + "/" + filename, curr_dst)
+            count += 1
+        else:
+            curr_dst = dst + "/test/" + category + "/" + filename
+            print(curr_dst)
+            print(src + "/" + filename)
+            copyfile(src + "/" + filename, curr_dst)
 
 
 root_dirs = [dst+"/validation/", dst+"/test/", dst+"/train/"]
@@ -66,7 +67,7 @@ for dir in root_dirs:
     if not os.path.exists(dir):
         os.mkdir(dir)
 
-categories = ["treat_a"] #, "treat_b", "treat_c", "treat_d"]
+categories = ["treat_a", "treat_b", "treat_c", "treat_d"]
 paths = [path_A, path_B, path_C, path_D]
 
 for category, path in zip(categories, paths):
