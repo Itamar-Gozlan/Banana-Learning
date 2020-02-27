@@ -15,7 +15,7 @@ import sys
 
 """" --- globals --- """
 
-num_epochs = 1
+num_epochs = 250
 save_folder_path = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models"
 path_train = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/train'
 path_test = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/test'
