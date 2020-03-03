@@ -92,7 +92,7 @@ def execute(model, model_name, use_augmentation):
     print("============== " + model_name + " Based network ==============")
 
     batch_size = 32
-    epochs = 400
+    epochs = 1
 
     steps_per_epoch = train_size / batch_size
     validation_steps = test_size / batch_size
@@ -189,21 +189,22 @@ prev_cnn_model = define_cnn_model_prev("ADAM", tgt_size + (3,))
 
 
 train_gt, test_gt, validation_gt = gen_iterators(tgt_size, False)
-print("========= CIFAR-10 MODEL - NO AUGMENTATION =========")
-execute(cnn_model, "CIFAR-10-NO-AUG", False)
-CIFAR10_PATH = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models/CIFAR-10-NO-AUG.h5"
-model = load_model(CIFAR10_PATH)
-scores = model.evaluate(validation_gt, verbose=1)
-print('Test loss:', scores[0])
-print('Test accuracy:', scores[1])
-
-print("========= CIFAR-10 MODEL - WITH AUGMENTATION =========")
-execute(cnn_model, "CIFAR-10-YES-AUG", True)
-CIFAR10_PATH = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models/CIFAR-10-YES-AUG.h5"
-model = load_model(CIFAR10_PATH)
-scores = model.evaluate(validation_gt, verbose=1)
-print('Test loss:', scores[0])
-print('Test accuracy:', scores[1])
+train_gt.config[""]
+# print("========= CIFAR-10 MODEL - NO AUGMENTATION =========")
+# execute(cnn_model, "CIFAR-10-NO-AUG", False)
+# CIFAR10_PATH = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models/CIFAR-10-NO-AUG.h5"
+# model = load_model(CIFAR10_PATH)
+# scores = model.evaluate(validation_gt, verbose=1)
+# print('Test loss:', scores[0])
+# print('Test accuracy:', scores[1])
+#
+# print("========= CIFAR-10 MODEL - WITH AUGMENTATION =========")
+# execute(cnn_model, "CIFAR-10-YES-AUG", True)
+# CIFAR10_PATH = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models/CIFAR-10-YES-AUG.h5"
+# model = load_model(CIFAR10_PATH)
+# scores = model.evaluate(validation_gt, verbose=1)
+# print('Test loss:', scores[0])
+# print('Test accuracy:', scores[1])
 
 
 # predict = model.predict_generator(validation_gt) #need to shuffle_off
