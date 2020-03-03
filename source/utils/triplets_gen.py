@@ -11,8 +11,11 @@ dst_path_C = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/RGB_
 src_path_D = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/plants_RGB_D'
 dst_path_D = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/RGB_D'
 
-src_paths = [src_path_A, src_path_B, src_path_C, src_path_D]
-dst_paths = [dst_path_A, dst_path_B, dst_path_C, dst_path_D]
+# src_paths = [src_path_A, src_path_B, src_path_C, src_path_D]
+# dst_paths = [dst_path_A, dst_path_B, dst_path_C, dst_path_D]
+
+src_paths = [src_path_B, src_path_C, src_path_D]
+dst_paths = [dst_path_B, dst_path_C, dst_path_D]
 
 
 def crate_target_name(src_a, src_b, src_c):
@@ -41,7 +44,8 @@ def join_pictures(src_path, dst_path, images):
 
         target_img = cv2.hconcat([image1, image2, image3])
         new_name = crate_target_name(images[i - 2], images[i - 1], images[i])
-        cv2.imwrite(dst_path + "/" + new_name, target_img)
+        write_status = cv2.imwrite(dst_path + "/" + new_name, target_img)
+        print("saving ", dst_path + "/" + new_name, " status = ", str(write_status))
 
 
 def organize_and_execute_join(src_path, dst_path):
@@ -59,6 +63,8 @@ def organize_and_execute_join(src_path, dst_path):
 
 
 for src_path, dst_path in zip(src_paths, dst_paths):
+    if not os.path.exists(dst_path):
+        os.mkdir(dst_path)
     print("=== BEGIN ===")
     organize_and_execute_join(src_path, dst_path)
     print("=== END ===")
