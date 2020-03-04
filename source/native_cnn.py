@@ -13,10 +13,15 @@ import os
 import sys
 # ------------- globals -----------------
 
-path_train = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/train'
-path_test = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/test'
-path_validation = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/validation'
+# # whole photo (without background)
+# path_train = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/train'
+# path_test = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/test'
+# path_validation = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/validation'
 
+# # triplets path
+path_train = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/train'
+path_test = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/test'
+path_validation = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/validation'
 
 
 # ------------- utils -----------------
@@ -28,7 +33,7 @@ def define_optimizier(name, lr):
     opt = {
         "RMS": tensorflow.keras.optimizers.RMSprop(lr=lr, decay=1e-6),
         "SGD": tensorflow.keras.optimizers.SGD(lr=lr, decay=1e-6),
-        "ADAM": tensorflow.keras.optimizers.SGD(lr=lr, decay=1e-6)
+        "ADAM": tensorflow.keras.optimizers.Adam(lr=lr, decay=1e-6)
     }
     return opt.get(name, "Invalid name")
 
@@ -37,7 +42,7 @@ def get_data_gen(use_augmentation):
     if use_augmentation:
         return ImageDataGenerator(rotation_range=70,  # randomly rotate images in the range (degrees, 0 to 180)
                                       horizontal_flip=True,
-                                      vertical_flip=True,
+                                      vertical_flip=False, # no vertical flip in triplets train
                                       # randomly shift images horizontally (fraction of total width)
                                       width_shift_range=0.2,
                                       # randomly shift images vertically (fraction of total height)
@@ -113,7 +118,10 @@ def execute(model, model_name, use_augmentation):
 
 
 # ----------------- defines -----------------
-tgt_size = (336, 252)
+# tgt_size = (336, 252) # for single plant
+# tgt_size = (252, 1008) # triplets original size - GPU exhausted
+tgt_size = (151, 504) # triplets new size
+
 train_size = count_files_in_path(path_train)
 test_size = count_files_in_path(path_test)
 validation_size = count_files_in_path(path_validation)
@@ -189,33 +197,33 @@ prev_cnn_model = define_cnn_model_prev("ADAM", tgt_size + (3,))
 
 
 train_gt, test_gt, validation_gt = gen_iterators(tgt_size, False)
-train_gt.config[""]
-# print("========= CIFAR-10 MODEL - NO AUGMENTATION =========")
-# execute(cnn_model, "CIFAR-10-NO-AUG", False)
-# CIFAR10_PATH = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models/CIFAR-10-NO-AUG.h5"
-# model = load_model(CIFAR10_PATH)
-# scores = model.evaluate(validation_gt, verbose=1)
-# print('Test loss:', scores[0])
-# print('Test accuracy:', scores[1])
-#
-# print("========= CIFAR-10 MODEL - WITH AUGMENTATION =========")
-# execute(cnn_model, "CIFAR-10-YES-AUG", True)
-# CIFAR10_PATH = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models/CIFAR-10-YES-AUG.h5"
-# model = load_model(CIFAR10_PATH)
-# scores = model.evaluate(validation_gt, verbose=1)
-# print('Test loss:', scores[0])
-# print('Test accuracy:', scores[1])
+
+print("========= CIFAR-10 MODEL - TRIPLETS - NO AUGMENTATION =========")
+execute(cnn_model, "CIFAR-10-TRIPLETS-NO-AUG", False)
+CIFAR10_PATH = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models/CIFAR-10-TRIPLETS-NO-AUG.h5"
+model = load_model(CIFAR10_PATH)
+scores = model.evaluate(validation_gt, verbose=1)
+print('Test loss:', scores[0])
+print('Test accuracy:', scores[1])
+
+print("========= CIFAR-10 MODEL - TRIPLETS - WITH AUGMENTATION =========")
+execute(cnn_model, "CIFAR-10-TRIPLETS--YES-AUG", True)
+CIFAR10_PATH = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models/CIFAR-10-TRIPLETS--YES-AUG.h5"
+model = load_model(CIFAR10_PATH)
+scores = model.evaluate(validation_gt, verbose=1)
+print('Test loss:', scores[0])
+print('Test accuracy:', scores[1])
 
 
-# predict = model.predict_generator(validation_gt) #need to shuffle_off
-#
+predict = model.predict_generator(validation_gt) #need to shuffle_off
+
 # for i in validation_gt:
 #     idx = (validation_gt.batch_index - 1) * validation_gt.batch_size
 #     print(validation_gt.filenames[idx : idx + validation_gt.batch_size])
 
 
-# #y_pred = np.rint(predict)
+#y_pred = np.rint(predict)
 # y_true = validation_gt.classes
-#
+
 # print(y_true)
 

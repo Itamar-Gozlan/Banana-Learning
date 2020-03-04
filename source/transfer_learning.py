@@ -15,11 +15,25 @@ import sys
 
 """" --- globals --- """
 
-num_epochs = 250
+num_epochs = 1
+# dim = (336, 252, 3) # GPU exhausted
+# d2_dim = (336, 252)
+
+dim = (151, 504, 3) # GPU exhausted
+d2_dim = (151, 504) # GPU exhausted
+
+
+
 save_folder_path = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models"
-path_train = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/train'
-path_test = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/test'
-path_validation = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/validation'
+# path_train = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/train'
+# path_test = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/test'
+# path_validation = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/validation'
+
+
+# # triplets path
+path_train = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/train'
+path_test = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/test'
+path_validation = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/validation'
 
 """" --- common utils for all networks --- """
 
@@ -31,7 +45,7 @@ def count_files_in_path(path):
 def get_data_gen(preprocess_input, use_augmentation):
     if use_augmentation:
         return ImageDataGenerator(rotation_range=70,  # randomly rotate images in the range (degrees, 0 to 180)
-                                  horizontal_flip=True,
+                                  horizontal_flip=False, # do not include with triplets
                                   vertical_flip=True,
                                   # randomly shift images horizontally (fraction of total width)
                                   width_shift_range=0.2,
@@ -78,7 +92,7 @@ def save__model(model, model_name):
 def evaluate_model(model, preprocess_input):
     data_gen = ImageDataGenerator(preprocessing_function=preprocess_input)
     validation_gt = data_gen.flow_from_directory(path_validation,
-                                                 target_size=(336, 252),
+                                                 target_size=d2_dim,
                                                  color_mode='rgb',
                                                  batch_size=32,
                                                  class_mode='categorical',
@@ -137,10 +151,10 @@ def execute_all_models(use_augmentation=False):
 
     # Mobilenet
     print("============== Mobilenet_"+str(use_augmentation)+" ==============")
-    train_gt, test_gt = gen_iterators((336, 252), mobilenet_preprocess_input, use_augmentation)
+    train_gt, test_gt = gen_iterators(d2_dim, mobilenet_preprocess_input, use_augmentation)
     mobilenet_model = MobileNet(weights='imagenet',
                                 include_top=False,
-                                input_shape=(336, 252, 3))
+                                input_shape=dim)
 
     model = transfer_learning(train_size, test_size, train_gt, test_gt, mobilenet_model)  # build model
     evaluate_model(model, mobilenet_preprocess_input)
@@ -148,10 +162,10 @@ def execute_all_models(use_augmentation=False):
     #
     # # VGG
     # print("============== VGG ==============")
-    # train_gt, test_gt = gen_iterators((336, 252), vgg16_preprocess_input, use_augmentation)
+    # train_gt, test_gt = gen_iterators(d2_dim, vgg16_preprocess_input, use_augmentation)
     # vgg16_model = VGG16(weights='imagenet',
     #                     include_top=False,
-    #                     input_shape=(336, 252, 3))
+    #                     input_shape=dim)
     #
     # model = transfer_learning(train_size, test_size, train_gt, test_gt, vgg16_model)  # build model
     # evaluate_model(model, vgg16_preprocess_input)
@@ -160,10 +174,10 @@ def execute_all_models(use_augmentation=False):
     # GoogLeNet (e.g. InceptionV3).
     print("============== GoogLeNet"+str(use_augmentation)+" ==============")
 
-    train_gt, test_gt = gen_iterators((336, 252), gn_preprocess_input, use_augmentation)
+    train_gt, test_gt = gen_iterators(d2_dim, gn_preprocess_input, use_augmentation)
     googlenet_model = InceptionV3(weights='imagenet',
                                   include_top=False,
-                                  input_shape=(336, 252, 3))
+                                  input_shape=dim)
 
     model = transfer_learning(train_size, test_size, train_gt, test_gt, googlenet_model)  # build model
     evaluate_model(model, gn_preprocess_input)
@@ -171,10 +185,10 @@ def execute_all_models(use_augmentation=False):
 
     # # ResNet50 (e.g. InceptionV3).
     # print("============== ResNet50 ==============")
-    # train_gt, test_gt = gen_iterators((336, 252), resnet_preprocess_input,use_augmentation)
+    # train_gt, test_gt = gen_iterators(d2_dim, resnet_preprocess_input,use_augmentation)
     # resnet_model = ResNet50(weights='imagenet',
     #                         include_top=False,
-    #                         input_shape=(336, 252, 3))
+    #                         input_shape=dim)
     #
     # resnet_model = transfer_learning(train_size, test_size, train_gt, test_gt, googlenet_model)  # build model
     # evaluate_model(model, resnet_preprocess_input)
