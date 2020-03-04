@@ -97,7 +97,7 @@ def execute(model, model_name, use_augmentation):
     print("============== " + model_name + " Based network ==============")
 
     batch_size = 32
-    epochs = 1
+    epochs = 400
 
     steps_per_epoch = train_size / batch_size
     validation_steps = test_size / batch_size

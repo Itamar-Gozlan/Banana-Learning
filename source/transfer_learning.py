@@ -15,7 +15,7 @@ import sys
 
 """" --- globals --- """
 
-num_epochs = 1
+num_epochs = 300
 # dim = (336, 252, 3) # GPU exhausted
 # d2_dim = (336, 252)
 
