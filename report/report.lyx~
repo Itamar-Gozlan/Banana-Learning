@@ -1,0 +1,704 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 15line%
+\end_inset
+
+
+\series bold
+\size largest
+Banana-Machine Learning
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 15theight%
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 27line%
+\end_inset
+
+
+\series bold
+\size larger
+GIP Lab Project
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 60theight%
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 10line%
+\end_inset
+
+
+\bar under
+Eyal Faygenboim
+\bar default
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\bar under
+Itamar Gozlan
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 8line%
+\end_inset
+
+eyalf210@gmail.com
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+itamar.goz@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Abstract
+\end_layout
+
+\begin_layout Standard
+Diagnosis of water stress among plants in general and bananas in particular
+ is a widespread problem.
+\begin_inset Newline newline
+\end_inset
+
+In our project, the goal is to create a classification system for banana
+ plants able to classify between 4 types of water treatment.
+\begin_inset Newline newline
+\end_inset
+
+Our methods include creating a large dataset using data augmantations on
+ the present dataset and analyzing it in on several convolutional nural
+ networks.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 200baselineskip%
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Theoretical Background
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Plant stress
+\series default
+ can be divided into two primary categories.
+ Abiotic stress is a physical (e.g., light, temperature) or chemical insult
+ that the environment may impose on a plant.
+ Biotic stress is a biological insult, (e.g., insects, disease) to which a
+ plant may be exposed during its lifetime.
+ Some plants may be injured by a stress, which means that they exhibit one
+ or more metabolic dysfunctions.
+ If the stress is moderate and short term, the injury may be temporary and
+ the plant may recover when the stress is removed.
+ If the stress is severe enough, it may prevent flowering, seed formation,
+ and induce senescence that leads to plant death.
+ Such plants are considered to be susceptible.
+ Some plants escape the stress altogether, such as ephemeral, or short-lived,
+ desert plants.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Drought stress
+\series default
+ is one of the main causes of crop loss within the agricultural world.
+ This is due to water's necessity in so many fundamental processes in plant
+ growth.
+ It has become especially important in recent years to find a way to combat
+ drought stress.
+ A decrease in precipitation and subsequent increase in drought are extremely
+ likely in the future due to an increase in global warming.
+ Plants have come up with many mechanisms and adaptations to try and deal
+ with drought stress.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+A 
+\series bold
+phenotype
+\series default
+ of an organism is the composite of the organism's observable characteristics
+ or traits, including its morphology or physical form and structure; its
+ developmental processes; its biochemical and physiological properties;
+ its behavior, and the products of behavior.
+ An organism's phenotype results from two basic factors: the expression
+ of an organism's genetic code, or its genotype, and the influence of environmen
+tal factors, which may interact, further affecting phenotype.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 200baselineskip%
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Project goals
+\end_layout
+
+\begin_layout Standard
+Our main goal is to create a classification system to identify four levels
+ of palnt stress based on our dataset.
+ Other low tier goals includes enlarging ouer dataset to try and improve
+ the systems classification abilty by using and combining data augmantation
+ mathods, understanding the use of convolutional nural network and image
+ processing
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 200baselineskip%
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Methodology
+\end_layout
+
+\begin_layout Subsection
+Dataset
+\end_layout
+
+\begin_layout Standard
+The dataset includes two type of pictures:
+\end_layout
+
+\begin_layout Enumerate
+regular pictures: for each of the four calssifications the data set contains
+ 30 plants pictured for 17 days (picture a day) in a set size of 
+\begin_inset Formula $4032\times3024$
+\end_inset
+
+ which adds up to a total of 2040 regular pictures.
+\end_layout
+
+\begin_layout Enumerate
+Thermal pictures: for each plant that has a normal picture, and additional
+ thermal picture in a set size of 
+\begin_inset Formula $384\times288$
+\end_inset
+
+ is included, with a JSON metadata file and a temperature matrix file, which
+ adds up to a total of 2040 thermal pictures.
+\end_layout
+
+\begin_layout Subsection
+Workflow
+\end_layout
+
+\begin_layout Standard
+Our general workflow is as follwos:
+\end_layout
+
+\begin_layout Enumerate
+dataset manipulation: using vasies data augmantation methods to enlarge
+ the dataset
+\end_layout
+
+\begin_layout Enumerate
+trainning CNNs: train different CNNs to see if a pre-trained CNN will improve
+ the clasiffication results
+\end_layout
+
+\begin_layout Enumerate
+evaluate and compare the results from the different CNNs
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\,$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+We designed three experiments in ascending complexity to find the best classific
+ation using our dataset.
+ The firs experiment is using the regular pictures dataset without any manipulat
+ion with different CNNs to set a base line to be compared to in further
+ experiments.
+ Our second experiment is using the thermal photos and thermal metadata
+ in conjuction with the regular photos and trying to achive better classificatio
+n ratio.
+ The third experiment includes data manipulation to sufficiently enlarge
+ the dataset (with and without the thermal photos) to see if a bigger dataset
+ results in better classification
+\end_layout
+
+\end_body
+\end_document

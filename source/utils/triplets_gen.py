@@ -1,3 +1,11 @@
+###############################################################################
+# triplets_gen.py                                                             #
+# Technion GIP Final Project                                                  #
+# implementation:  Itamar Gozlan                                              #
+# This file generates a modified dataset of triplets                          #
+# from segmented Bana plants (but can be applied for every dataset)           #
+# To use: change src/dst folders and run                                      #
+###############################################################################
 import cv2
 import os
 import numpy as np

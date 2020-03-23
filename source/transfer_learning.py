@@ -1,3 +1,8 @@
+###############################################################################
+# transfer_learning.py                                                        #
+# Technion GIP Final Project                                                  #
+# implementation:  Itamar Gozlan                                              #
+###############################################################################
 from tensorflow.keras.layers import Dense, GlobalAveragePooling2D
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Model
@@ -29,7 +34,6 @@ save_folder_path = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_mod
 # path_test = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/test'
 # path_validation = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/validation'
 
-
 # # triplets path
 path_train = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/train'
 path_test = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/test'
@@ -37,11 +41,10 @@ path_validation = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets
 
 """" --- common utils for all networks --- """
 
-
 def count_files_in_path(path):
     return sum([len(files) for r, d, files in os.walk(path)])
 
-
+# use_augmentation False\True preprocess_input from library
 def get_data_gen(preprocess_input, use_augmentation):
     if use_augmentation:
         return ImageDataGenerator(rotation_range=70,  # randomly rotate images in the range (degrees, 0 to 180)
@@ -56,7 +59,7 @@ def get_data_gen(preprocess_input, use_augmentation):
     else:
         return ImageDataGenerator(preprocessing_function=preprocess_input)
 
-
+# Generates iterators from global paths with\without Kears built-in augmentations preprocess_input from library
 def gen_iterators(shape: tuple, preprocess_input, use_augmentation):
     data_gen = get_data_gen(preprocess_input, use_augmentation)
 
@@ -106,7 +109,7 @@ def evaluate_model(model, preprocess_input):
 # Pre-Trained Model as Feature Extractor in Model
 """" --- models --- """
 
-
+# execute a single pre-defined model
 def transfer_learning(train_size, test_size, train_gt, test_gt, base_model):
     x = base_model.output
     x = GlobalAveragePooling2D()(x)
@@ -195,7 +198,6 @@ def execute_all_models(use_augmentation=False):
     # save__model(model, "ResNet50")
 
 
-# sys.stdout = open('logs/transfer_learning.log', "w")
 
 print("=============== Transfer Leraning - No Augmentation ==============")
 execute_all_models(False)

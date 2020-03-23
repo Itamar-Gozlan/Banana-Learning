@@ -1,3 +1,11 @@
+###############################################################################
+# image_folder_setup.py                                                       #
+# Technion GIP Final Project                                                  #
+# implementation:  Itamar Gozlan                                              #
+# Populate Train\Test\Validation dirs from folders A/B/C/D as a               #
+# pre-process stage. To use change the paths and folder names                 #
+###############################################################################
+
 import os
 from shutil import copy
 import cv2

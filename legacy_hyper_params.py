@@ -1,4 +1,4 @@
-"""filed due to insufficient resources"""
+"""failed due to insufficient resources"""
 
 def hyper_parameters():
     lr_values = [0.001, 0.0001, 0.00005] # [0.005, 0.001, 0.0001, 0.00005, 0.00001]

@@ -1,3 +1,9 @@
+###############################################################################
+# native_cnn.py                                                               #
+# Technion GIP Final Project                                                  #
+# implementation:  Itamar Gozlan                                              #
+###############################################################################
+
 import sys
 import numpy as np
 import matplotlib.pylab as plt
@@ -22,6 +28,16 @@ import sys
 path_train = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/train'
 path_test = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/test'
 path_validation = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/validation'
+save_folder_path = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models"
+
+# ----------------- defines -----------------
+# tgt_size = (336, 252) # for single plant
+# tgt_size = (252, 1008) # triplets original size - GPU exhausted
+tgt_size = (151, 504) # triplets new size
+
+train_size = count_files_in_path(path_train)
+test_size = count_files_in_path(path_test)
+validation_size = count_files_in_path(path_validation)
 
 
 # ------------- utils -----------------
@@ -37,7 +53,7 @@ def define_optimizier(name, lr):
     }
     return opt.get(name, "Invalid name")
 
-
+# use_augmentation False\True 
 def get_data_gen(use_augmentation):
     if use_augmentation:
         return ImageDataGenerator(rotation_range=70,  # randomly rotate images in the range (degrees, 0 to 180)
@@ -51,6 +67,7 @@ def get_data_gen(use_augmentation):
     else:
         return ImageDataGenerator()
 
+# Generates iterators from global paths with\without Kears built-in augmentations
 def gen_iterators(shape: tuple, use_augmentation):
     data_gen = get_data_gen(use_augmentation)
 
@@ -78,13 +95,10 @@ def gen_iterators(shape: tuple, use_augmentation):
     return train_gt, test_gt, validation_gt
 
 
-save_folder_path = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models"
-
-
 def save_model(model, model_name):
     # path_model = save_folder_path
     # save_dir = os.path.join(os.getcwd(), ) + path_model
-    save_dir = save_folder_path
+    save_dir = save_folder_path # global
     # Save model and weights
     if not os.path.isdir(save_dir):
         os.makedirs(save_dir)
@@ -92,7 +106,7 @@ def save_model(model, model_name):
     model.save(model_path)
     print('Saved trained model at %s ' % model_path)
 
-
+#  Gets defined model and execute training and evaluation
 def execute(model, model_name, use_augmentation):
     print("============== " + model_name + " Based network ==============")
 
@@ -115,16 +129,6 @@ def execute(model, model_name, use_augmentation):
     print('Test accuracy:', scores[1])
 
     save_model(model, model_name)
-
-
-# ----------------- defines -----------------
-# tgt_size = (336, 252) # for single plant
-# tgt_size = (252, 1008) # triplets original size - GPU exhausted
-tgt_size = (151, 504) # triplets new size
-
-train_size = count_files_in_path(path_train)
-test_size = count_files_in_path(path_test)
-validation_size = count_files_in_path(path_validation)
 
 
 # ----------------- models -----------------
@@ -189,8 +193,11 @@ def define_cnn_model_prev(opt, shape):
     return model
 
 
+# In order to use this code please change:
+# global paths and defines to match your studies
+# Paths should inclide Test\Train\Validation dirs
+# Change target size (tgt_size under globals) to match your data
 # ----------------- driver-code -----------------
-
 
 cnn_model = define_cnn_model("ADAM", tgt_size + (3,))
 prev_cnn_model = define_cnn_model_prev("ADAM", tgt_size + (3,))
@@ -215,7 +222,7 @@ print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
 
 
-predict = model.predict_generator(validation_gt) #need to shuffle_off
+predict = model.predict_generator(validation_gt) # need to shuffle_off
 
 # for i in validation_gt:
 #     idx = (validation_gt.batch_index - 1) * validation_gt.batch_size
