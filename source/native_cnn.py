@@ -4,9 +4,7 @@
 # implementation:  Itamar Gozlan                                              #
 ###############################################################################
 
-import sys
 import numpy as np
-import matplotlib.pylab as plt
 import tensorflow.keras
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
@@ -14,9 +12,11 @@ from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, GlobalA
 from tensorflow.keras.layers import Conv2D, MaxPooling2D
 from tensorflow.keras.applications.mobilenet import preprocess_input
 from tensorflow.keras.models import load_model
-from sklearn.metrics import confusion_matrix
 import os
 import sys
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
+
 # ------------- globals -----------------
 
 # # whole photo (without background)
@@ -24,16 +24,24 @@ import sys
 # path_test = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/test'
 # path_validation = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/sorted_whole/validation'
 
-# # triplets path
-path_train = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/train'
-path_test = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/test'
-path_validation = 'D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/validation'
-save_folder_path = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models"
+# path_train = '/home/itamargoz/data/sorted/seg/train'
+# path_test = '/home/itamargoz/data/sorted/seg/test'
+# path_validation = '/home/itamargoz/data/sorted/seg/validation'
+
+# triplets
+path_train = '/home/itamargoz/data/sorted/triplets/train'
+path_test = '/home/itamargoz/data/sorted/triplets/test'
+path_validation = '/home/itamargoz/data/sorted/triplets/validation'
+
+save_folder_path = "/home/itamargoz/trunk/Banana-Learning/saved_models"
 
 # ----------------- defines -----------------
 # tgt_size = (336, 252) # for single plant
 # tgt_size = (252, 1008) # triplets original size - GPU exhausted
 tgt_size = (151, 504) # triplets new size
+
+def count_files_in_path(path):
+    return sum([len(files) for r, d, files in os.walk(path)])
 
 train_size = count_files_in_path(path_train)
 test_size = count_files_in_path(path_test)
@@ -41,8 +49,6 @@ validation_size = count_files_in_path(path_validation)
 
 
 # ------------- utils -----------------
-def count_files_in_path(path):
-    return sum([len(files) for r, d, files in os.walk(path)])
 
 
 def define_optimizier(name, lr):
@@ -58,7 +64,7 @@ def get_data_gen(use_augmentation):
     if use_augmentation:
         return ImageDataGenerator(rotation_range=70,  # randomly rotate images in the range (degrees, 0 to 180)
                                       horizontal_flip=True,
-                                      vertical_flip=False, # no vertical flip in triplets train
+                                      # vertical_flip=True, # no vertical flip in triplets train
                                       # randomly shift images horizontally (fraction of total width)
                                       width_shift_range=0.2,
                                       # randomly shift images vertically (fraction of total height)
@@ -130,6 +136,17 @@ def execute(model, model_name, use_augmentation):
 
     save_model(model, model_name)
 
+def print_summary(model, model_name, validation_gt):
+  print("<<<<<<<<<<<<<< SUMMARY -" + model_name + " >>>>>>>>>>>>>>")
+  predict = model.predict_generator(validation_gt)
+  y_pred = np.rint(predict)
+  y_true = validation_gt.classes
+  y_res = []
+  for i in y_pred:
+    y_res.append(int(i[0]))
+  for yt,yr,fn in zip(y_true,y_res,validation_gt.filenames):
+    print(fn + " " + str(yt==yr) + " prediction")
+
 
 # ----------------- models -----------------
 
@@ -198,39 +215,21 @@ def define_cnn_model_prev(opt, shape):
 # Paths should inclide Test\Train\Validation dirs
 # Change target size (tgt_size under globals) to match your data
 # ----------------- driver-code -----------------
+if len(sys.argv) == 1:
+  print("Error! model name was not defined")
+  exit()
+
+model_name = sys.argv[1]
 
 cnn_model = define_cnn_model("ADAM", tgt_size + (3,))
-prev_cnn_model = define_cnn_model_prev("ADAM", tgt_size + (3,))
+#prev_cnn_model = define_cnn_model_prev("ADAM", tgt_size + (3,))
 
 
 train_gt, test_gt, validation_gt = gen_iterators(tgt_size, False)
 
-print("========= CIFAR-10 MODEL - TRIPLETS - NO AUGMENTATION =========")
-execute(cnn_model, "CIFAR-10-TRIPLETS-NO-AUG", False)
-CIFAR10_PATH = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models/CIFAR-10-TRIPLETS-NO-AUG.h5"
-model = load_model(CIFAR10_PATH)
-scores = model.evaluate(validation_gt, verbose=1)
-print('Test loss:', scores[0])
-print('Test accuracy:', scores[1])
+print("========= " + model_name + " NO AUGMENTATION =========")
+execute(cnn_model, model_name + "_NO_AUG", False)
 
-print("========= CIFAR-10 MODEL - TRIPLETS - WITH AUGMENTATION =========")
-execute(cnn_model, "CIFAR-10-TRIPLETS--YES-AUG", True)
-CIFAR10_PATH = "C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/saved_models/CIFAR-10-TRIPLETS--YES-AUG.h5"
-model = load_model(CIFAR10_PATH)
-scores = model.evaluate(validation_gt, verbose=1)
-print('Test loss:', scores[0])
-print('Test accuracy:', scores[1])
-
-
-predict = model.predict_generator(validation_gt) # need to shuffle_off
-
-# for i in validation_gt:
-#     idx = (validation_gt.batch_index - 1) * validation_gt.batch_size
-#     print(validation_gt.filenames[idx : idx + validation_gt.batch_size])
-
-
-#y_pred = np.rint(predict)
-# y_true = validation_gt.classes
-
-# print(y_true)
+print("========= " + model_name + " WITH AUGMENTATION =========")
+execute(cnn_model, model_name + "_YES_AUG", True)
 

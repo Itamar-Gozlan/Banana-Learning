@@ -13,11 +13,11 @@ from shutil import copyfile
 import random
 
 
-dst = "D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets"
-path_A = "D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/RGB_A"
-path_B = "D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/RGB_B"
-path_C = "D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/RGB_C"
-path_D = "D:/Users Data/ItamarGIP/Desktop/Itamar/data/seg_data/triplets/RGB_D"
+dst = "/home/itamargoz/data/sorted/triplets"
+path_A = "/home/itamargoz/data/segmented/triplets/RGB_A"
+path_B = "/home/itamargoz/data/segmented/triplets/RGB_B"
+path_C = "/home/itamargoz/data/segmented/triplets/RGB_C"
+path_D = "/home/itamargoz/data/segmented/triplets/RGB_D"
 
 def is_validate_id(id):
     if id == "05" or id == "15" or id == "25":
@@ -33,36 +33,36 @@ def sort_for_category(dst, src, category):
     arr = []
     for filename in os.listdir(src):
         id = filename.split("_")[12] # updated for triplets name
+        # id = filename.split("_")[6] # updated for single name
+
         if is_validate_id(id):
             curr_dst = dst+"/validation/"+category+"/"+filename
-            print(curr_dst)
-            print(src+"/"+filename)
-            copyfile(src+"/"+filename, curr_dst)
+            print(src + "/" + filename + " => "+curr_dst)
+            copyfile(src+"/"+filename, curr_dst) # copy is done
         else:
-            print(filename)
+            # print(filename)
             arr.append(filename)
 
     # print(arr)
-    # random.shuffle(arr)
-    # print(("===================\n\n\n\==============="))
+    random.shuffle(arr)
+    print(("===================\n\n\n\==============="))
     # print(arr)
-    # count = 0
-    # for filename in arr:
-    #     if count < len(arr)*0.8:
-    #         curr_dst = dst + "/train/" + category + "/" + filename
-    #         print(curr_dst)
-    #         print(src + "/" + filename + " => "+curr_dst)
-    #         copyfile(src + "/" + filename, curr_dst)
-    #         count += 1
-    #     else:
-    #         curr_dst = dst + "/test/" + category + "/" + filename
-    #         print(curr_dst)
-    #         print(src + "/" + filename)
-    #         copyfile(src + "/" + filename, curr_dst)
+    count = 0
+    for filename in arr:
+        if count < len(arr)*0.8:
+            curr_dst = dst + "/train/" + category + "/" + filename
+            # print(curr_dst)
+            print(src + "/" + filename + " => "+curr_dst)
+            copyfile(src + "/" + filename, curr_dst)
+            count += 1
+        else:
+            curr_dst = dst + "/test/" + category + "/" + filename
+            # print(curr_dst)
+            print(src + "/" + filename + " => "+curr_dst)
+            copyfile(src + "/" + filename, curr_dst)
 
 
 root_dirs = [dst+"/validation/", dst+"/test/", dst+"/train/"]
-
 for dir in root_dirs:
     if not os.path.exists(dir):
         os.mkdir(dir)

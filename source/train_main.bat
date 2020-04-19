@@ -1,5 +1,2 @@
-python C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/Banana-Learning/source/native_cnn.py 1> C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/Banana-Learning/source/logs/native_main_run.log 2> C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/Banana-Learning/source/logs/native_main_run_err.log
-python C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/Banana-Learning/source/transfer_learning.py 1>C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/Banana-Learning/source/logs/tl_main_run.log 2> C:/Users/ItamarGIP/PycharmProjects/Banana-Learning/Banana-Learning/source/logs/tl_main_run_err.log
-git add .
-git commit -m "Post run push - TRIPLETS MODE - auto push - TEST"
-git push origin HEAD
+python /home/itamargoz/trunk/Banana-Learning/source/native_cnn.py TRIPLETS 1> /home/itamargoz/trunk/Banana-Learning/source/logs/native_main_run_TRIPLETS.log 2> /home/itamargoz/trunk/Banana-Learning/source/logs/native_main_run_TRIPLETS_err.log
+python /home/itamargoz/trunk/Banana-Learning/source/utils/plot_from_log.py loss /home/itamargoz/trunk/Banana-Learning/source/logs/native_main_run_TRIPLETS.log &
