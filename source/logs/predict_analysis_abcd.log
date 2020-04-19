@@ -1,0 +1,492 @@
+================== PREDICTION SUMMARY FOR CIFAR10_ABCD_NO_AUG ==================
+53759_20180911_153308_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180911
+54092_20180923_145335_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180923
+54099_20180915_152602_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180915
+54091_20180912_160046_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180912
+54174_20180928_155154_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180928
+54179_20180918_150627_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180918
+53754_20180927_153038_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180927
+54178_20180917_153602_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180917
+54098_20180922_150246_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180922
+53751_20180917_153641_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180917
+54185_20180927_152957_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180927
+54090_20180918_150547_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180918
+53758_20180913_151248_RGB_Treat_A_25_plant_0.png : y_true = A y_res = C : False Prediction : Date 20180913
+53765_20180924_153016_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180924
+54177_20180913_151203_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180913
+54184_20180925_150915_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180925
+54188_20180921_150113_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180921
+53752_20180920_151954_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180920
+53750_20180918_150726_RGB_Treat_A_25_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180918
+53764_20180912_160157_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180912
+54187_20180911_153226_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180911
+54095_20180911_153150_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180911
+54100_20180914_150145_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180914
+54176_20180920_151906_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180920
+54089_20180921_150031_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180921
+54190_20180915_152639_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180915
+53756_20180926_155213_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180926
+53755_20180923_145415_RGB_Treat_A_25_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180923
+54182_20180924_152927_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180924
+54097_20180913_151120_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180913
+54093_20180916_145311_RGB_Treat_A_05_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180916
+54181_20180916_145351_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180916
+54189_20180914_150222_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180914
+54180_20180922_150332_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180922
+54096_20180924_152811_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180924
+54104_20180925_150703_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180925
+54186_20180926_155118_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180926
+53761_20180921_150155_RGB_Treat_A_25_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180921
+53757_20180928_155234_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180928
+53763_20180925_151005_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180925
+53753_20180922_150417_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180922
+53762_20180914_150300_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180914
+53749_20180916_145444_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180916
+53760_20180915_152719_RGB_Treat_A_25_plant_0.png : y_true = A y_res = C : False Prediction : Date 20180915
+54105_20180927_152909_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180927
+54101_20180926_155016_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180926
+54103_20180928_155104_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180928
+54175_20180923_145356_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180923
+54102_20180920_151828_RGB_Treat_A_05_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180920
+54183_20180912_160122_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180912
+54094_20180917_153525_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180917
+55233_20180913_151352_RGB_Treat_B_05_plant_0.png : y_true = B y_res = D : False Prediction : Date 20180913
+54879_20180916_145712_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180916
+55230_20180916_145547_RGB_Treat_B_05_plant_0.png : y_true = B y_res = D : False Prediction : Date 20180916
+55244_20180918_150831_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180918
+54871_20180914_150523_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180914
+54877_20180912_160407_RGB_Treat_B_25_plant_0.png : y_true = B y_res = D : False Prediction : Date 20180912
+54876_20180922_150615_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180922
+55047_20180923_145508_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180923
+55057_20180914_150440_RGB_Treat_B_15_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180914
+55045_20180915_152857_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180915
+54885_20180920_152208_RGB_Treat_B_25_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180920
+55236_20180927_153146_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180927
+55243_20180921_150248_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180921
+55050_20180928_155426_RGB_Treat_B_15_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180928
+54884_20180927_153311_RGB_Treat_B_25_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180927
+55228_20180911_153404_RGB_Treat_B_05_plant_0.png : y_true = B y_res = D : False Prediction : Date 20180911
+55054_20180927_153229_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180927
+54880_20180923_145532_RGB_Treat_B_25_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180923
+55239_20180915_152815_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180915
+55232_20180928_155346_RGB_Treat_B_05_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180928
+55048_20180912_160327_RGB_Treat_B_15_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180912
+54882_20180925_151227_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180925
+55242_20180912_160250_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180912
+55042_20180922_150541_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180922
+55049_20180913_151435_RGB_Treat_B_15_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180913
+55051_20180924_153158_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180924
+55235_20180924_153117_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180924
+54874_20180917_153855_RGB_Treat_B_25_plant_0.png : y_true = B y_res = D : False Prediction : Date 20180917
+55053_20180920_152129_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180920
+55055_20180916_145631_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180916
+54875_20180913_151517_RGB_Treat_B_25_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180913
+55241_20180914_150403_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180914
+54887_20180921_150350_RGB_Treat_B_25_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180921
+55041_20180911_153437_RGB_Treat_B_15_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180911
+55229_20180920_152055_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180920
+55237_20180917_153738_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180917
+54878_20180911_153512_RGB_Treat_B_25_plant_0.png : y_true = B y_res = D : False Prediction : Date 20180911
+55238_20180926_155322_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180926
+54872_20180928_155457_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180928
+54873_20180926_155439_RGB_Treat_B_25_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180926
+54886_20180918_150941_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180918
+55240_20180922_150508_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180922
+55231_20180923_145449_RGB_Treat_B_05_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180923
+55046_20180926_155406_RGB_Treat_B_15_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180926
+55044_20180917_153814_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180917
+54881_20180915_152940_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180915
+55043_20180921_150317_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180921
+54883_20180924_153234_RGB_Treat_B_25_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180924
+55234_20180925_151109_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180925
+55056_20180918_150907_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180918
+55052_20180925_151147_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180925
+54585_20180912_160514_RGB_Treat_C_05_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180912
+54588_20180926_155542_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180926
+54484_20180925_151402_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180925
+54487_20180918_151115_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180918
+54439_20180923_145717_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180923
+54494_20180916_145851_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180916
+54437_20180925_151441_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180925
+54488_20180913_151653_RGB_Treat_C_15_plant_0.png : y_true = C y_res = A : False Prediction : Date 20180913
+54590_20180921_150445_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180921
+54442_20180928_155702_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180928
+54432_20180916_145946_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180916
+54593_20180916_145811_RGB_Treat_C_05_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180916
+54444_20180926_155704_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180926
+54591_20180923_145619_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180923
+54431_20180927_153528_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180927
+54489_20180923_145636_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180923
+54595_20180915_153037_RGB_Treat_C_05_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180915
+54592_20180928_155557_RGB_Treat_C_05_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180928
+54486_20180915_153116_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180915
+54436_20180921_150556_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180921
+54481_20180912_160552_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180912
+54491_20180926_155629_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180926
+54438_20180920_152426_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180920
+54485_20180914_150700_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180914
+54429_20180915_153156_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180915
+54430_20180924_153445_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180924
+54483_20180927_153453_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180927
+54598_20180920_152308_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180920
+54582_20180911_153611_RGB_Treat_C_05_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180911
+54597_20180914_150621_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180914
+54495_20180920_152347_RGB_Treat_C_15_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180920
+54441_20180912_160631_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180912
+54596_20180924_153328_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180924
+54480_20180924_153407_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180924
+54587_20180918_151038_RGB_Treat_C_05_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180918
+54496_20180917_154028_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180917
+54445_20180914_150741_RGB_Treat_C_25_plant_0.png : y_true = C y_res = A : False Prediction : Date 20180914
+54434_20180917_154108_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180917
+54443_20180918_151152_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180918
+54440_20180911_153724_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180911
+54435_20180913_151738_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180913
+54586_20180917_153950_RGB_Treat_C_05_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180917
+54594_20180925_151323_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180925
+54492_20180911_153647_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180911
+54490_20180928_155630_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180928
+54493_20180922_150741_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180922
+54583_20180922_150708_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180922
+54433_20180922_150815_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180922
+54482_20180921_150520_RGB_Treat_C_15_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180921
+54584_20180913_151611_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180913
+54589_20180927_153415_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180927
+55267_20180915_153418_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180915
+55722_20180917_154243_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180917
+55276_20180923_145831_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180923
+55726_20180921_150717_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180921
+55626_20180926_155803_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180926
+55620_20180928_155806_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180928
+55735_20180912_160804_RGB_Treat_D_15_plant_0.png : y_true = D y_res = C : False Prediction : Date 20180912
+55621_20180912_160727_RGB_Treat_D_05_plant_0.png : y_true = D y_res = C : False Prediction : Date 20180912
+55627_20180922_150908_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180922
+55733_20180914_150955_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180914
+55730_20180918_151324_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180918
+55623_20180915_153258_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180915
+55266_20180924_153642_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180924
+55727_20180926_155840_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180926
+55628_20180923_145758_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180923
+55268_20180925_151647_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180925
+55624_20180925_151538_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180925
+55634_20180918_151252_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180918
+55622_20180927_153630_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180927
+55277_20180917_154318_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180917
+55625_20180920_152520_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180920
+55629_20180916_150046_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180916
+55275_20180922_151009_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180922
+55269_20180911_153946_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180911
+55732_20180924_153610_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180924
+55278_20180913_151951_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180913
+55720_20180927_153707_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180927
+55270_20180920_152630_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180920
+55632_20180914_150908_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180914
+55724_20180923_145814_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180923
+55265_20180916_150203_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180916
+55271_20180918_151403_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180918
+55725_20180925_151614_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180925
+55631_20180913_151835_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180913
+55734_20180913_151909_RGB_Treat_D_15_plant_0.png : y_true = D y_res = B : False Prediction : Date 20180913
+55729_20180920_152556_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180920
+55619_20180911_153820_RGB_Treat_D_05_plant_0.png : y_true = D y_res = C : False Prediction : Date 20180911
+55728_20180922_150940_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180922
+55272_20180927_153744_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180927
+55731_20180916_150125_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180916
+55263_20180928_155906_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180928
+55630_20180924_153537_RGB_Treat_D_05_plant_0.png : y_true = D y_res = C : False Prediction : Date 20180924
+55273_20180912_160846_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180912
+55264_20180926_155914_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180926
+55723_20180915_153337_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180915
+55262_20180914_151038_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180914
+55736_20180928_155835_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180928
+55274_20180921_150749_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180921
+55721_20180911_153903_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180911
+55633_20180917_154207_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180917
+55635_20180921_150647_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180921
+========= TRUE PREDICTION BY DATE =========
+20180911  :  8
+20180912  :  8
+20180913  :  5
+20180914  :  9
+20180915  :  11
+20180916  :  10
+20180917  :  11
+20180918  :  10
+20180920  :  7
+20180921  :  7
+20180922  :  10
+20180923  :  7
+20180924  :  8
+20180925  :  11
+20180926  :  8
+20180927  :  9
+20180928  :  9
+========= FALSE PREDICTION BY DATE =========
+20180911  :  4
+20180912  :  4
+20180913  :  7
+20180914  :  3
+20180915  :  1
+20180916  :  2
+20180917  :  1
+20180918  :  2
+20180920  :  5
+20180921  :  5
+20180922  :  2
+20180923  :  5
+20180924  :  4
+20180925  :  1
+20180926  :  4
+20180927  :  3
+20180928  :  3
+========= TOTAL PREDICTION SUMMARY CIFAR10_ABCD_NO_AUG=========
+total : 204
+total true: 148
+total false: 56
+accuracy = 0.7254901960784313
+================== PREDICTION SUMMARY FOR CIFAR10_ABCD_YES_AUG ==================
+53759_20180911_153308_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180911
+54092_20180923_145335_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180923
+54099_20180915_152602_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180915
+54091_20180912_160046_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180912
+54174_20180928_155154_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180928
+54179_20180918_150627_RGB_Treat_A_15_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180918
+53754_20180927_153038_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180927
+54178_20180917_153602_RGB_Treat_A_15_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180917
+54098_20180922_150246_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180922
+53751_20180917_153641_RGB_Treat_A_25_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180917
+54185_20180927_152957_RGB_Treat_A_15_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180927
+54090_20180918_150547_RGB_Treat_A_05_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180918
+53758_20180913_151248_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180913
+53765_20180924_153016_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180924
+54177_20180913_151203_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180913
+54184_20180925_150915_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180925
+54188_20180921_150113_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180921
+53752_20180920_151954_RGB_Treat_A_25_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180920
+53750_20180918_150726_RGB_Treat_A_25_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180918
+53764_20180912_160157_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180912
+54187_20180911_153226_RGB_Treat_A_15_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180911
+54095_20180911_153150_RGB_Treat_A_05_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180911
+54100_20180914_150145_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180914
+54176_20180920_151906_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180920
+54089_20180921_150031_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180921
+54190_20180915_152639_RGB_Treat_A_15_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180915
+53756_20180926_155213_RGB_Treat_A_25_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180926
+53755_20180923_145415_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180923
+54182_20180924_152927_RGB_Treat_A_15_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180924
+54097_20180913_151120_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180913
+54093_20180916_145311_RGB_Treat_A_05_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180916
+54181_20180916_145351_RGB_Treat_A_15_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180916
+54189_20180914_150222_RGB_Treat_A_15_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180914
+54180_20180922_150332_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180922
+54096_20180924_152811_RGB_Treat_A_05_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180924
+54104_20180925_150703_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180925
+54186_20180926_155118_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180926
+53761_20180921_150155_RGB_Treat_A_25_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180921
+53757_20180928_155234_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180928
+53763_20180925_151005_RGB_Treat_A_25_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180925
+53753_20180922_150417_RGB_Treat_A_25_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180922
+53762_20180914_150300_RGB_Treat_A_25_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180914
+53749_20180916_145444_RGB_Treat_A_25_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180916
+53760_20180915_152719_RGB_Treat_A_25_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180915
+54105_20180927_152909_RGB_Treat_A_05_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180927
+54101_20180926_155016_RGB_Treat_A_05_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180926
+54103_20180928_155104_RGB_Treat_A_05_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180928
+54175_20180923_145356_RGB_Treat_A_15_plant_0.png : y_true = A y_res = A : True Prediction : Date 20180923
+54102_20180920_151828_RGB_Treat_A_05_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180920
+54183_20180912_160122_RGB_Treat_A_15_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180912
+54094_20180917_153525_RGB_Treat_A_05_plant_0.png : y_true = A y_res = B : False Prediction : Date 20180917
+55233_20180913_151352_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180913
+54879_20180916_145712_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180916
+55230_20180916_145547_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180916
+55244_20180918_150831_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180918
+54871_20180914_150523_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180914
+54877_20180912_160407_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180912
+54876_20180922_150615_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180922
+55047_20180923_145508_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180923
+55057_20180914_150440_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180914
+55045_20180915_152857_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180915
+54885_20180920_152208_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180920
+55236_20180927_153146_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180927
+55243_20180921_150248_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180921
+55050_20180928_155426_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180928
+54884_20180927_153311_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180927
+55228_20180911_153404_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180911
+55054_20180927_153229_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180927
+54880_20180923_145532_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180923
+55239_20180915_152815_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180915
+55232_20180928_155346_RGB_Treat_B_05_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180928
+55048_20180912_160327_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180912
+54882_20180925_151227_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180925
+55242_20180912_160250_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180912
+55042_20180922_150541_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180922
+55049_20180913_151435_RGB_Treat_B_15_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180913
+55051_20180924_153158_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180924
+55235_20180924_153117_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180924
+54874_20180917_153855_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180917
+55053_20180920_152129_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180920
+55055_20180916_145631_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180916
+54875_20180913_151517_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180913
+55241_20180914_150403_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180914
+54887_20180921_150350_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180921
+55041_20180911_153437_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180911
+55229_20180920_152055_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180920
+55237_20180917_153738_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180917
+54878_20180911_153512_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180911
+55238_20180926_155322_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180926
+54872_20180928_155457_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180928
+54873_20180926_155439_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180926
+54886_20180918_150941_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180918
+55240_20180922_150508_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180922
+55231_20180923_145449_RGB_Treat_B_05_plant_0.png : y_true = B y_res = A : False Prediction : Date 20180923
+55046_20180926_155406_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180926
+55044_20180917_153814_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180917
+54881_20180915_152940_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180915
+55043_20180921_150317_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180921
+54883_20180924_153234_RGB_Treat_B_25_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180924
+55234_20180925_151109_RGB_Treat_B_05_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180925
+55056_20180918_150907_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180918
+55052_20180925_151147_RGB_Treat_B_15_plant_0.png : y_true = B y_res = B : True Prediction : Date 20180925
+54585_20180912_160514_RGB_Treat_C_05_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180912
+54588_20180926_155542_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180926
+54484_20180925_151402_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180925
+54487_20180918_151115_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180918
+54439_20180923_145717_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180923
+54494_20180916_145851_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180916
+54437_20180925_151441_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180925
+54488_20180913_151653_RGB_Treat_C_15_plant_0.png : y_true = C y_res = B : False Prediction : Date 20180913
+54590_20180921_150445_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180921
+54442_20180928_155702_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180928
+54432_20180916_145946_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180916
+54593_20180916_145811_RGB_Treat_C_05_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180916
+54444_20180926_155704_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180926
+54591_20180923_145619_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180923
+54431_20180927_153528_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180927
+54489_20180923_145636_RGB_Treat_C_15_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180923
+54595_20180915_153037_RGB_Treat_C_05_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180915
+54592_20180928_155557_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180928
+54486_20180915_153116_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180915
+54436_20180921_150556_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180921
+54481_20180912_160552_RGB_Treat_C_15_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180912
+54491_20180926_155629_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180926
+54438_20180920_152426_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180920
+54485_20180914_150700_RGB_Treat_C_15_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180914
+54429_20180915_153156_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180915
+54430_20180924_153445_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180924
+54483_20180927_153453_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180927
+54598_20180920_152308_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180920
+54582_20180911_153611_RGB_Treat_C_05_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180911
+54597_20180914_150621_RGB_Treat_C_05_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180914
+54495_20180920_152347_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180920
+54441_20180912_160631_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180912
+54596_20180924_153328_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180924
+54480_20180924_153407_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180924
+54587_20180918_151038_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180918
+54496_20180917_154028_RGB_Treat_C_15_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180917
+54445_20180914_150741_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180914
+54434_20180917_154108_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180917
+54443_20180918_151152_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180918
+54440_20180911_153724_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180911
+54435_20180913_151738_RGB_Treat_C_25_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180913
+54586_20180917_153950_RGB_Treat_C_05_plant_0.png : y_true = C y_res = C : True Prediction : Date 20180917
+54594_20180925_151323_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180925
+54492_20180911_153647_RGB_Treat_C_15_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180911
+54490_20180928_155630_RGB_Treat_C_15_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180928
+54493_20180922_150741_RGB_Treat_C_15_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180922
+54583_20180922_150708_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180922
+54433_20180922_150815_RGB_Treat_C_25_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180922
+54482_20180921_150520_RGB_Treat_C_15_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180921
+54584_20180913_151611_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180913
+54589_20180927_153415_RGB_Treat_C_05_plant_0.png : y_true = C y_res = D : False Prediction : Date 20180927
+55267_20180915_153418_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180915
+55722_20180917_154243_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180917
+55276_20180923_145831_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180923
+55726_20180921_150717_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180921
+55626_20180926_155803_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180926
+55620_20180928_155806_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180928
+55735_20180912_160804_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180912
+55621_20180912_160727_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180912
+55627_20180922_150908_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180922
+55733_20180914_150955_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180914
+55730_20180918_151324_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180918
+55623_20180915_153258_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180915
+55266_20180924_153642_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180924
+55727_20180926_155840_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180926
+55628_20180923_145758_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180923
+55268_20180925_151647_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180925
+55624_20180925_151538_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180925
+55634_20180918_151252_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180918
+55622_20180927_153630_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180927
+55277_20180917_154318_RGB_Treat_D_25_plant_0.png : y_true = D y_res = B : False Prediction : Date 20180917
+55625_20180920_152520_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180920
+55629_20180916_150046_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180916
+55275_20180922_151009_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180922
+55269_20180911_153946_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180911
+55732_20180924_153610_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180924
+55278_20180913_151951_RGB_Treat_D_25_plant_0.png : y_true = D y_res = B : False Prediction : Date 20180913
+55720_20180927_153707_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180927
+55270_20180920_152630_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180920
+55632_20180914_150908_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180914
+55724_20180923_145814_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180923
+55265_20180916_150203_RGB_Treat_D_25_plant_0.png : y_true = D y_res = B : False Prediction : Date 20180916
+55271_20180918_151403_RGB_Treat_D_25_plant_0.png : y_true = D y_res = B : False Prediction : Date 20180918
+55725_20180925_151614_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180925
+55631_20180913_151835_RGB_Treat_D_05_plant_0.png : y_true = D y_res = B : False Prediction : Date 20180913
+55734_20180913_151909_RGB_Treat_D_15_plant_0.png : y_true = D y_res = B : False Prediction : Date 20180913
+55729_20180920_152556_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180920
+55619_20180911_153820_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180911
+55728_20180922_150940_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180922
+55272_20180927_153744_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180927
+55731_20180916_150125_RGB_Treat_D_15_plant_0.png : y_true = D y_res = B : False Prediction : Date 20180916
+55263_20180928_155906_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180928
+55630_20180924_153537_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180924
+55273_20180912_160846_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180912
+55264_20180926_155914_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180926
+55723_20180915_153337_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180915
+55262_20180914_151038_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180914
+55736_20180928_155835_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180928
+55274_20180921_150749_RGB_Treat_D_25_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180921
+55721_20180911_153903_RGB_Treat_D_15_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180911
+55633_20180917_154207_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180917
+55635_20180921_150647_RGB_Treat_D_05_plant_0.png : y_true = D y_res = D : True Prediction : Date 20180921
+========= TRUE PREDICTION BY DATE =========
+20180911  :  8
+20180912  :  10
+20180913  :  6
+20180914  :  9
+20180915  :  9
+20180916  :  6
+20180917  :  8
+20180918  :  6
+20180920  :  9
+20180921  :  8
+20180922  :  8
+20180923  :  8
+20180924  :  8
+20180925  :  11
+20180926  :  8
+20180927  :  10
+20180928  :  8
+========= FALSE PREDICTION BY DATE =========
+20180911  :  4
+20180912  :  2
+20180913  :  6
+20180914  :  3
+20180915  :  3
+20180916  :  6
+20180917  :  4
+20180918  :  6
+20180920  :  3
+20180921  :  4
+20180922  :  4
+20180923  :  4
+20180924  :  4
+20180925  :  1
+20180926  :  4
+20180927  :  2
+20180928  :  4
+========= TOTAL PREDICTION SUMMARY CIFAR10_ABCD_YES_AUG=========
+total : 204
+total true: 140
+total false: 64
+accuracy = 0.6862745098039216
