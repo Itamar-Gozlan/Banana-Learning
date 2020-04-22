@@ -1,7 +1,6 @@
-# Banana-Learning - In Progress
-
+# Banana-Learning
 ## Abstract
-Using various types of CNNs to distinguish between 4 kinds of Banana treatments by observing the pictures only.</br>
+Using various types of CNNs to distinguish between 4 kinds of Banana treatments qualities by observing the pictures only.</br>
 
 ## Project goals
 - Use and combine data augmentation methods
